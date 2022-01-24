@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 @SuppressWarnings("resource")
 public class StringCut {
@@ -13,9 +14,10 @@ public class StringCut {
 		token = input.next();
 
 
-		result = string.split(token);
+		result = string.split(Pattern.quote(token));
 		for(String tokens:result) {
-			System.out.println(tokens);
+			if(tokens != " ")
+				System.out.println(tokens);
 		}
 	}
 }
