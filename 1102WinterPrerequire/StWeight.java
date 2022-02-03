@@ -16,7 +16,7 @@ public class StWeight {
 	}
 
 	private static double standardWeight(int height, int gender) {
-		double stWeight;
+		double stWeight = 0;
 
 		if(gender == 1) {
 			stWeight = (height - 80) * 0.7;

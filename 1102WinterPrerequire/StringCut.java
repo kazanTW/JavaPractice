@@ -16,8 +16,9 @@ public class StringCut {
 
 		result = string.split(Pattern.quote(token));
 		for(String tokens:result) {
-			if(tokens != " ")
+			if(!(tokens.equals(""))) {
 				System.out.println(tokens);
+			}
 		}
 	}
 }
